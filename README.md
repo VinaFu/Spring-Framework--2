@@ -7,3 +7,8 @@ Define of Spring: kinda Inversion of Control Container, refers to Dependency Inj
     WORA = Write Once Run Anywhere
     
 Start from lesson 3, build the pom.xml and other services by yourself
+
+
+Spring download Maven is not understandable.
+
+
