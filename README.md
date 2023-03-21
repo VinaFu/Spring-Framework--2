@@ -59,19 +59,64 @@ Demos: <conference>
                 }
           
         3.2
-        add interface
+        Add interface
         rightClick (function bracket) --> Refactor --> Extract Interfaces
-         
+        Edit interface name & directory
+        Select member --> refactor
+                    
+                public interface SpeakerRepository {
+                    List<Speaker> findAll();
+                }           // simple and easy
                 
     4. add Service
                 
-           service means
+        服务功能不明确
+        4.1
+        see code block below:
                 
+                package com.pluralsight.service;
+
+                import com.pluralsight.model.Speaker;       // alt + enter = import
+                import com.pluralsight.repository.HibernateSpeakerRepositoryImpl;
+                import com.pluralsight.repository.SpeakerRepository;
+
+                import java.util.List;
+                public class SpeakerServiceIml implements SpeakerService {      
+
+                    private SpeakerRepository repository = new HibernateSpeakerRepositoryImpl();  // import repository & speakerRepository
+                    @Override
+                    public List<Speaker> findAll(){         // import Speaker
+                        return repository.findAll();
+                    }
+                }
     
+        4.2
+        Create interface as above
+        @Override appears when u build interface
+                               
     5. add Run
+       
+       运行程序app，查看结果
+       Build "Application(class)" under java file. Just print out the answer.
+                
+                see code blocks below:
+                
+                import com.pluralsight.service.SpeakerService;
+                import com.pluralsight.service.SpeakerServiceIml;
+
+                public class Application {
+
+                    public static void main(String args[]){
+                        SpeakerService service = new SpeakerServiceIml();
+
+                        System.out.println(service.findAll().get(0).getFirstName());        //   print out
+                    }
+                }
     
     6. Configuration 
-
+                
+    通常很难test，所以将它们放入annotations 注释或 .xml configuration 中
+                
 
 Spring download Maven is not understandable.
 
