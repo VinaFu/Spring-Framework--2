@@ -93,11 +93,12 @@ Demos: <conference>
         4.2
         Create interface as above
         @Override appears when u build interface
+        implements refers to connect to the Interface <SpeakerService>
                                
     5. add Run
        
        运行程序app，查看结果
-       Build "Application(class)" under java file. Just print out the answer.
+       Build "Application(class)" under java file. Just print out the answer.(有点像继承extends)
                 
                 see code blocks below:
                 
@@ -115,7 +116,7 @@ Demos: <conference>
     
     6. Configuration 
                 
-    通常很难test，所以将它们放入annotations 注释或 .xml configuration 中
+    通常很难test，所以将它们放入annotations 注释或 .xml configuration 中. ~~~~~~~~
                 
 
 Spring download Maven is not understandable.
