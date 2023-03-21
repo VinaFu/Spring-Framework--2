@@ -8,6 +8,7 @@ Define of Spring: kinda Inversion of Control Container, refers to Dependency Inj
     
 Start from lesson 3, build the pom.xml and other services by yourself
 
+# UNIT 3 Architecture and Project Setup
 
 Demos: <conference>
 
@@ -117,8 +118,29 @@ Demos: <conference>
     6. Configuration 
                 
     通常很难test，所以将它们放入annotations 注释或 .xml configuration 中. ~~~~~~~~
-                
 
-Spring download Maven is not understandable.
+# Spring Configuration Using Java
+
+
+
+# Spring Scope and Autowiring
+
+
+
+# Spring Configuration Using XML
+
+
+
+# Advanced Bean Configuration
+
+
+
+
+
+
+
+
+
+
 
 
